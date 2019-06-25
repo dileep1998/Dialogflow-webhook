@@ -27,9 +27,7 @@ def webHookResult(req):
        return {}
     result = req.get("queryResult")
     parameters = result.get("parameters")
-    city = parameters.get("geo-city")
-   
-    
+    city = parameters.get("geo-city") 
     print(city)
     print(parameters)
     temperature = {'Delhi':'40', 'Mumbai':'35'}
@@ -43,11 +41,6 @@ def webHookResult(req):
         'source':'dialogflow'
     }
 
-
-
-
-
-
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 5000))
 
@@ -55,4 +48,4 @@ if __name__ == '__main__':
 
     app.run(debug=True, port=port, host='0.0.0.0')
 
-
+    
