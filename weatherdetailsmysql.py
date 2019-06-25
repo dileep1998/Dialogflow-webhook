@@ -31,7 +31,7 @@ def webHookResult(req):
    
     
     db = MySQLdb.connect(host='localhost',
-                    database='TESTDB',
+                    database='db',
                     user='root',
                     password='1234',
                     )
