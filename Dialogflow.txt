@@ -8,7 +8,8 @@ Download and install ngrok , mysql and  mysqldb on your terminal(ubuntu)
 open terminal type command  "ngrok http 5000"
 5000 is a port number which we use
 Take url and paste that url in the fullfillment section by enableing webhook in dialogflow agent.
-Example of url to be paste in fullfillment : https://ea49fba8.ngrok.io
+Example of url to be paste in fullfillment is : https://ea49fba8.ngrok.io
+add "/webhook" to the url in fullfillment : https://ea49fba8.ngrok.io/webhook
 
 open new terminal type command  "FLASK_APP=file.py flask run"
 
