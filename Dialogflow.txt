@@ -3,7 +3,7 @@ Dialogflow used for creating chatbots
 Visit https://dialogflow.com/
 Login to the page and create weatheragent
 
-Download and install ngrok , mysql and  mysqldb on your terminal(ubuntu)
+Download and install ngrok , flask , mysql and  mysqldb on your terminal(ubuntu)
 
 open terminal type command  "ngrok http 5000"
 5000 is a port number which we use
