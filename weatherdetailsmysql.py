@@ -2,8 +2,7 @@
 from flask import Flask
 from flask import request
 from flask import make_response
-import urllib
-#from api import fetchHomeDetails
+
 import json
 import MySQLdb
 app = Flask(__name__)
