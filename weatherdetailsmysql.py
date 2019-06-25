@@ -27,7 +27,7 @@ def webHookResult(req):
        return {}
     result = req.get("queryResult")
     parameters = result.get("parameters")
-    zone = parameters.get("geo-city")
+    city = parameters.get("geo-city")
    
     
     db = MySQLdb.connect(host='localhost',
@@ -35,13 +35,13 @@ def webHookResult(req):
                     user='root',
                     password='1234',
                     )
-    sql="SELECT temperature FROM WEATHER WHERE city='%s'"%zone
+    sql="SELECT TEMPERATURE FROM WEATHER WHERE city='%s'"%city
     cursor =db.cursor()
     cursor.execute(sql)
     record = cursor.fetchone()
     temp=str(record[0])
     print(record,record[0])
-    speech="The temperature in " + zone + " is " + temp 
+    speech="The temperature in " + city + " is " + temp 
     return {
         'fulfillmentText':speech,
         'displayText':speech,
