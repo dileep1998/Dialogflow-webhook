@@ -1,18 +1,12 @@
 # To get static reply from webhook
 
-
 import json
-
-
 from flask import Flask
 from flask import request
 from flask import make_response
 
 # Flask app should start in global layout
 app = Flask(__name__)
-
-
-
 
 @app.route('/static_reply', methods=['POST'])
 def static_reply():
@@ -38,5 +32,4 @@ if __name__ == '__main__':
     print ("Starting app on port %d" %(port))
 
     app.run(debug=True, port=port, host='0.0.0.0')
-
 
