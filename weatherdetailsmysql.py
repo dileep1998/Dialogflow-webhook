@@ -29,7 +29,6 @@ def webHookResult(req):
     parameters = result.get("parameters")
     city = parameters.get("geo-city")
    
-    
     db = MySQLdb.connect(host='localhost',
                     database='db',
                     user='root',
@@ -49,15 +48,10 @@ def webHookResult(req):
     }
 
 
-
-
-
-
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 5000))
 
     print("Starting app on port %d" % port)
 
     app.run(debug=True, port=port, host='0.0.0.0')
-
 
