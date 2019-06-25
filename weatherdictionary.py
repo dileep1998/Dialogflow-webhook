@@ -30,11 +30,11 @@ def webHookResult(req):
     city = parameters.get("geo-city")
    
     
-    print(zone)
+    print(city)
     print(parameters)
-    cost = {'Delhi':'40', 'Mumbai':'35'}
+    temperature = {'Delhi':'40', 'Mumbai':'35'}
 
-    temp=cost[city]   
+    temp=temperature[city]   
        
     speech="The temperature in " + zone + " is " + temp 
     return {
