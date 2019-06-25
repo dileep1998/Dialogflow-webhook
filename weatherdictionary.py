@@ -27,14 +27,14 @@ def webHookResult(req):
        return {}
     result = req.get("queryResult")
     parameters = result.get("parameters")
-    zone = parameters.get("geo-city")
+    city = parameters.get("geo-city")
    
     
     print(zone)
     print(parameters)
     cost = {'Delhi':'40', 'Mumbai':'35'}
 
-    temp=cost[zone]   
+    temp=cost[city]   
        
     speech="The temperature in " + zone + " is " + temp 
     return {
