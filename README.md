@@ -12,8 +12,8 @@ database server that provides the Python database API.
 
 # Tools required for this project:
 1. Flask (web framework)
-2. Mysql (database)
-3. MySQLdb
+2. Mysql,Postgressql (database)
+3. MySQLdb,Psycgp2
 4. Sublime text or Text editor
 # Environment :
 1. Ubuntu (18.04)
